@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <form class="form-search" id="search-form">
+                <div class="row">
+                    <div class="col-8">
+                        <input type="search" id="city-input" placeholder="City"
+                            class="form-control rounded p-2 rounded-3 m-2" ; />
+                    </div>
+                    <div class="col-4">
+                        <input type="submit" value="Search" id="submit" />
+                        <buttom id="current">Current</buttom>
+                    </div>
+                </div>
+            </form>
+            <h1 id="city">Yangon , Myanmar</h1>
+            <ul>
+                <li id="date">Monday 12:30</li>
+                <li>Cloudly</li>
+            </ul>
+            <div class="row m-4">
+                <div class="col-6">
+                    <div class="row mt-3">
+                        <div class="col-3 fs-2">
+                            ⛅
+                        </div>
+                        <div class="col fs-3 currentTemperature">
+                            <div>
+                                <span id="temperature">80</span>
+
+                                <span class="units">
+                                    <a href=" " id="celsius-link">°C</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 text-secondary fs-4">
+                    <p id="humidity">Humidity: 77%</p>
+                    <p id="wind">Wind: 8 km/h</p>
+                </div>
+            </div>
+            <hr />
+
+            <div class="row">
+                <div class="col">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group text-primary">Tuesday</li>
+                            <li class="list-group mt-2">⛅</li>
+                            <li class="list-group mt-2">97°</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col mt-0">
+                        <ul class="list-group">
+                            <li class="list-group text-primary">Wednesday</li>
+                            <li class="list-group mt-2">⛅</li>
+                            <li class="list-group mt-2">97°</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col mt-0">
+                        <ul class="list-group">
+                            <li class="list-group text-primary">Thursday</li>
+                            <li class="list-group mt-2">⛅</li>
+                            <li class="list-group mt-2">97°</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col mt-0">
+                        <ul class="list-group">
+                            <li class="list-group text-primary">Friday</li>
+                            <li class="list-group mt-2">⛅</li>
+                            <li class="list-group mt-2">97°</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col mt-0">
+                        <ul class="list-group">
+                            <li class="list-group text-primary">Saturday</li>
+                            <li class="list-group mt-2">⛅</li>
+                            <li class="list-group mt-2">97°</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
